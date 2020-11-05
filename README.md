@@ -24,19 +24,28 @@ We benchmark our code thoroughly on CIFAR-10 and imagenet-1K for classification,
 
 Comparison among several state-of-the-art methods for VGG16 on CIFAR-10
 
-    \specialrule{0.10em}{0pt}{0pt}
-    Baseline                               & 313.47(1.00$\times$)   & 14.99(1.00$\times$)  & 93.77           & 99.73  
-    \specialrule{0.08em}{0pt}{0pt}
-    \textbf{DNAL}($\lambda_a$=1e-5)        & 211.89(1.48$\times$)   &  5.51(2.72$\times$)  & 93.82           & 99.71  
-    \textbf{DNAL}($\lambda_a$=5e-5)        & 195.14(1.61$\times$)   &  3.73(4.02$\times$)  & 93.53           & 99.77  
-    Variational-pruning~\cite{ZhaoNZZZT19} &    190(1.65$\times$)   &  3.92(3.82$\times$)  & 93.18           & -      
-    GAL-0.1~\cite{LinJYZCYHD19}            & 171.89(1.82$\times$)   &  2.67(5.61$\times$)  & 93.42           & -      
-    \textbf{DNAL}($\lambda_a$=1e-4)        & 161.97(1.94$\times$)   &  2.10(7.14$\times$)  & 93.75           & 99.72  
-    HRank~\cite{LinJWZZTL20}               &  73.70(4.25$\times$)   &  1.78(8.42$\times$)  & 91.23           & -      
-    \textbf{DNAL}($\lambda_a$=2e-4)        &  61.23(5.12$\times$)   &  0.60(24.98$\times$) & 92.33           & 99.69 
-    \textbf{DNAL}($\lambda_a$=3e-4)        &  29.77(10.53$\times$)  &  0.29(51.69$\times$) & 89.93           & 99.62  
-    \textbf{DNAL}($\lambda_a$=4e-4)        &  22.04(14.22$\times$)  &  0.24(62.46$\times$) & 89.92           & 99.41  
-    \textbf{DNAL}($\lambda_a$=5e-4)        &  16.65(18.83$\times$)  &  0.17(88.18$\times$) & 89.27           & 99.51  
+Model FLOPs
+
+Params
+
+Top-1
+(%)
+Top-5
+(%)
+
+model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%)
+---------|--------|-------|-----------|-----------
+[Baseline]                      | 313.47(1.00$\times$)   | 14.99(1.00$\times$)  | 93.77           | 99.73  
+[DNAL($\lambda_a$=1e-5)]        | 211.89(1.48$\times$)   |  5.51(2.72$\times$)  | 93.82           | 99.71  
+[DNAL($\lambda_a$=5e-5)]        | 195.14(1.61$\times$)   |  3.73(4.02$\times$)  | 93.53           | 99.77  
+[Variational-pruning]           |    190(1.65$\times$)   |  3.92(3.82$\times$)  | 93.18           | -      
+[GAL-0.1]                       | 171.89(1.82$\times$)   |  2.67(5.61$\times$)  | 93.42           | -      
+[DNAL($\lambda_a$=1e-4)]        | 161.97(1.94$\times$)   |  2.10(7.14$\times$)  | 93.75           | 99.72  
+[HRank]                         |  73.70(4.25$\times$)   |  1.78(8.42$\times$)  | 91.23           | -      
+[DNAL($\lambda_a$=2e-4)]        |  61.23(5.12$\times$)   |  0.60(24.98$\times$) | 92.33           | 99.69 
+[DNAL($\lambda_a$=3e-4)]        |  29.77(10.53$\times$)  |  0.29(51.69$\times$) | 89.93           | 99.62  
+[DNAL($\lambda_a$=4e-4)]        |  22.04(14.22$\times$)  |  0.24(62.46$\times$) | 89.92           | 99.41  
+[DNAL($\lambda_a$=5e-4)]        |  16.65(18.83$\times$)  |  0.17(88.18$\times$) | 89.27           | 99.51  
 
 2) ResNet56 on CIFAR-10:
 
@@ -89,6 +98,16 @@ Comparison among several state-of-the-art methods for MobileNetV2 on CIFAR-10
 1) VGG16 on ImageNet-1K:
 
 Comparison among several state-of-the-art methods for VGG16 on ImageNet-1K
+
+model    | Params | FLOPs | Top-1 (%) | Top-5 (%)
+---------|--------|-------|-----------|-----------
+[Baseline](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)                    | 25.55M | 4.09G   | 76.13   | 92.862
+[ResNet-G (Conv-60/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)    | 11.88M | 1.91G   | 75.20   | 92.55
+[ResNet-G (Conv-70/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)    |  9.83M | 1.55G   | 74.43   | 92.30
+[ResNet-G (Conv-80/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)    |  7.76M | 1.20G   | 73.22   | 91.70
+[ResNet-LG (Conv-60/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)   | 11.87M | 1.91G   | 75.12   | 92.59
+[ResNet-LG (Conv-70/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)   |  9.83M | 1.56G   | 74.42   | 92.31
+[ResNet-LG (Conv-80/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)   |  7.76M | 1.20G   | 73.38   | 91.69
 
     \specialrule{0.10em}{0pt}{0pt}
     Baseline                            &  15.47(1.00$\times$)  & 138.37(1.00$\times$)  & 76.13  & 92.86  & 90    
