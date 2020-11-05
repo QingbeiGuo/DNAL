@@ -147,7 +147,7 @@ Comparison among several state-of-the-art methods for ProxylessNAS on ImageNet-1
 model    | Params(M) | Top-1 (%) | Top-5 (%) | Search method | Search Cost (Epochs)
 ---------|--------|-------|-----------|-----------|-----------
 [Baseline]                      |  16.0   | 75.7   | 92.5   | -         | 150
-[DNAL($\lambda_a$=6e-5)]        |   3.6   | 75.0   | 92.3   | gradient  | 100+10+110
+[DNAL($\lambda_a$=6e-5)]        |   3.6   | 75.0   | 92.5   | gradient  | 100+10+110
 ---------|--------|-------|-----------|-----------|-----------
 [EA+BPE-1]                      |   5.0   | 74.56  | -      | EA        | -
 [CARS-I]                        |   5.1   | 75.2   | 92.5   | EA        | -
