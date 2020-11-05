@@ -158,6 +158,7 @@ Comparison among several state-of-the-art methods for ProxylessNAS on ImageNet-1
     \specialrule{0.08em}{0.5pt}{0pt}
     EA+BPE-1~\cite{ZhengJWYLTT20}       &   5.0   & 74.56  & -      & EA        & -
     CARS-A~\cite{YangWCSXXT19}          &   3.7   & 72.8   & 90.8   & EA        & -
+    CARS-E~\cite{YangWCSXXT19}          &   4.4   & 73.7   & 90.8   & EA        & -
     \specialrule{0.08em}{0pt}{0pt}
     RL+BPE-1~\cite{ZhengJWYLTT20}       &   5.5   & 74.18  & -      & RL        & -
     NASNet-A~\cite{ZophVSL17}           &   5.3   & 74.0   & 91.6   & RL        & -
