@@ -24,15 +24,6 @@ We benchmark our code thoroughly on CIFAR-10 and imagenet-1K for classification,
 
 Comparison among several state-of-the-art methods for VGG16 on CIFAR-10
 
-Model FLOPs
-
-Params
-
-Top-1
-(%)
-Top-5
-(%)
-
 model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%)
 ---------|--------|-------|-----------|-----------
 [Baseline]                      | 313.47(1.00$\times$)   | 14.99(1.00$\times$)  | 93.77           | 99.73  
@@ -51,47 +42,45 @@ model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%)
 
 Comparison among several state-of-the-art methods for ResNet56 on CIFAR-10
 
-    \specialrule{0.10em}{0pt}{0pt}
-    Baseline                               & 125.49(1.00$\times$)  &  0.85(1.00$\times$)   & 94.15           & 99.91  
-    \specialrule{0.08em}{0pt}{0pt}
-    \textbf{DNAL}($\lambda_a$=1e-5)        &  93.94(1.34$\times$)  &  0.66(1.29$\times$)   & 93.76           & 99.91  
-    HRank~\cite{LinJWZZTL20}               &  88.72(1.41$\times$)  &  0.71(1.20$\times$)   & 93.52           & -      
-    \textbf{DNAL}($\lambda_a$=5e-5)        &  83.11(1.51$\times$)  &  0.59(1.44$\times$)   & 93.75           & 99.87  
-    NISP~\cite{YuLCLMHGLD18}               &  81.00(1.55$\times$)  &  0.49(1.73$\times$)   & 93.01           & -      
-    AMC~\cite{HeLLWLH18}                   &   62.7(2.00$\times$)  &                  -    &  91.9           & -      
-    KSE(G=4)~\cite{LiLZLDWHJ19}            &     60(2.09$\times$)  &  0.43(1.98$\times$)   & 93.23           & -      
-    KSE(G=5)~\cite{LiLZLDWHJ19}            &     50(2.51$\times$)  &  0.36(2.36$\times$)   & 92.88           & -      
-    GAL-0.8~\cite{LinJYZCYHD19}            &  49.99(2.51$\times$)  &  0.29(2.93$\times$)   & 91.58           & -      
-    \textbf{DNAL}($\lambda_a$=1e-4)        &  36.94(3.40$\times$)  &  0.25(3.40$\times$)   & 93.20           & 99.89  
-    HRank~\cite{LinJWZZTL20}               &  32.52(3.86$\times$)  &  0.27(3.15$\times$)   & 90.72           & -      
-    \textbf{DNAL}($\lambda_a$=2e-4)        &   8.63(14.54$\times$) & 0.060(14.17$\times$)   & 89.31          & 99.66  
-    \textbf{DNAL}($\lambda_a$=3e-4)        &   3.44(36.48$\times$) & 0.022(38.64$\times$)  & 85.83           & 99.45  
-    \textbf{DNAL}($\lambda_a$=4e-4)        &   2.38(52.73$\times$) & 0.013(65.38$\times$)  & 84.07           & 99.31  
-    \textbf{DNAL}($\lambda_a$=5e-4)        &   1.68(74.70$\times$) &0.007(121.43$\times$)  & 83.48           & 99.19  
-    \specialrule{0.10em}{0pt}{0pt}
+model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%)
+---------|--------|-------|-----------|-----------
+[Baseline]                      | 125.49(1.00$\times$)  |  0.85(1.00$\times$)   | 94.15           | 99.91  
+[DNAL($\lambda_a$=1e-5)]        |  93.94(1.34$\times$)  |  0.66(1.29$\times$)   | 93.76           | 99.91  
+[HRank]                         |  88.72(1.41$\times$)  |  0.71(1.20$\times$)   | 93.52           | -      
+[DNAL($\lambda_a$=5e-5)]        |  83.11(1.51$\times$)  |  0.59(1.44$\times$)   | 93.75           | 99.87  
+[NISP]                          |  81.00(1.55$\times$)  |  0.49(1.73$\times$)   | 93.01           | -      
+[AMC]                           |   62.7(2.00$\times$)  |                  -    |  91.9           | -      
+[KSE(G=4)]                      |     60(2.09$\times$)  |  0.43(1.98$\times$)   | 93.23           | -      
+[KSE(G=5)]                      |     50(2.51$\times$)  |  0.36(2.36$\times$)   | 92.88           | -      
+[GAL-0.8]                       |  49.99(2.51$\times$)  |  0.29(2.93$\times$)   | 91.58           | -      
+[DNAL($\lambda_a$=1e-4)]        |  36.94(3.40$\times$)  |  0.25(3.40$\times$)   | 93.20           | 99.89  
+[HRank]                         |  32.52(3.86$\times$)  |  0.27(3.15$\times$)   | 90.72           | -      
+[DNAL($\lambda_a$=2e-4)]        |   8.63(14.54$\times$) | 0.060(14.17$\times$)  | 89.31           | 99.66  
+[DNAL($\lambda_a$=3e-4)]        |   3.44(36.48$\times$) | 0.022(38.64$\times$)  | 85.83           | 99.45  
+[DNAL($\lambda_a$=4e-4)]        |   2.38(52.73$\times$) | 0.013(65.38$\times$)  | 84.07           | 99.31  
+[DNAL($\lambda_a$=5e-4)]        |   1.68(74.70$\times$) |0.007(121.43$\times$)  | 83.48           | 99.19  
 
 3) MobileNetV2 on CIFAR-10:
 
 Comparison among several state-of-the-art methods for MobileNetV2 on CIFAR-10
 
-    \specialrule{0.10em}{0pt}{0pt}
-    Baseline                            &  91.17(1.00$\times$) &  2.30(1.00$\times$)  & 94.31           & 99.90  
-    \specialrule{0.08em}{0pt}{0pt}
-    FLGC(G=2)~\cite{WangKSC19}          &     79(1.15$\times$) &  1.18(1.95$\times$)  & 94.11           & -      
-    FLGC(G=3)~\cite{WangKSC19}          &     61(1.49$\times$) &  0.85(2.71$\times$)  & 94.20           & -      
-    \textbf{DNAL}($\lambda_a$=1e-5)     &  59.47(1.53$\times$) &  1.43(1.61$\times$)  & 94.17           & 99.89  
-    \textbf{DNAL}($\lambda_a$=5e-5)     &  54.98(1.66$\times$) &  1.20(1.92$\times$)  & 94.30           & 99.86  
-    FLGC(G=4)~\cite{WangKSC19}          &   51.5(1.77$\times$) &  0.68(3.38$\times$)  & 94.16           & -      
-    FLGC(G=5)~\cite{WangKSC19}          &     46(1.98$\times$) &  0.58(3.97$\times$)  & 93.88           & -      
-    FLGC(G=6)~\cite{WangKSC19}          &   42.5(2.15$\times$) &  0.51(4.51$\times$)  & 93.67           & -      
-    FLGC(G=7)~\cite{WangKSC19}          &     40(2.28$\times$) &  0.46(5.00$\times$)  & 93.66           & -      
-    FLGC(G=8)~\cite{WangKSC19}          &     38(2.40$\times$) &  0.43(5.35$\times$)  & 93.09           & -      
-    \textbf{DNAL}($\lambda_a$=1e-4)     &  36.63(2.49$\times$) &  0.65(3.54$\times$)  & 94.01           & 99.89  
-    \textbf{DNAL}($\lambda_a$=2e-4)     &  13.35(6.83$\times$) & 0.20(11.50$\times$)  & 91.96           & 99.91  
-    \textbf{DNAL}($\lambda_a$=3e-4)     &  7.81(11.67$\times$) & 0.12(19.17$\times$)  & 90.65           & 99.82  
-    \textbf{DNAL}($\lambda_a$=4e-4)     &  5.40(16.88$\times$) &0.096(23.96$\times$)  & 88.83           & 99.76  
-    \textbf{DNAL}($\lambda_a$=5e-4)     &  4.50(20.26$\times$) &0.081(28.40$\times$)  & 87.85           & 99.62  
-    \specialrule{0.10em}{0pt}{0pt}
+model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%)
+---------|--------|-------|-----------|-----------
+[Baseline]                      |  91.17(1.00$\times$) |  2.30(1.00$\times$)  | 94.31           | 99.90  
+[FLGC(G=2)]                     |     79(1.15$\times$) |  1.18(1.95$\times$)  | 94.11           | -      
+[FLGC(G=3)]                     |     61(1.49$\times$) |  0.85(2.71$\times$)  | 94.20           | -      
+[DNAL($\lambda_a$=1e-5)]        |  59.47(1.53$\times$) |  1.43(1.61$\times$)  | 94.17           | 99.89  
+[DNAL($\lambda_a$=5e-5)]        |  54.98(1.66$\times$) |  1.20(1.92$\times$)  | 94.30           | 99.86  
+[FLGC(G=4)]                     |   51.5(1.77$\times$) |  0.68(3.38$\times$)  | 94.16           | -      
+[FLGC(G=5)]                     |     46(1.98$\times$) |  0.58(3.97$\times$)  | 93.88           | -      
+[FLGC(G=6)]                     |   42.5(2.15$\times$) |  0.51(4.51$\times$)  | 93.67           | -      
+[FLGC(G=7)]                     |     40(2.28$\times$) |  0.46(5.00$\times$)  | 93.66           | -      
+[FLGC(G=8)]                     |     38(2.40$\times$) |  0.43(5.35$\times$)  | 93.09           | -      
+[DNAL($\lambda_a$=1e-4)]        |  36.63(2.49$\times$) |  0.65(3.54$\times$)  | 94.01           | 99.89  
+[DNAL($\lambda_a$=2e-4)]        |  13.35(6.83$\times$) | 0.20(11.50$\times$)  | 91.96           | 99.91  
+[DNAL($\lambda_a$=3e-4)]        |  7.81(11.67$\times$) | 0.12(19.17$\times$)  | 90.65           | 99.82  
+[DNAL($\lambda_a$=4e-4)]        |  5.40(16.88$\times$) |0.096(23.96$\times$)  | 88.83           | 99.76  
+[DNAL}($\lambda_a$=5e-4)]       |  4.50(20.26$\times$) |0.081(28.40$\times$)  | 87.85           | 99.62  
 
 2. ImageNet-1K
 
