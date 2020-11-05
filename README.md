@@ -166,6 +166,7 @@ model    | Params(M) | Top-1 (%) | Top-5 (%) | Search method | Search Cost (Epoc
 [FBNet-A]                       |   4.3   | 73.0   | -      | gradient  | 90+360
 [FBNet-B]                       |   4.5   | 74.1   | -      | gradient  | 90+360
 [FBNet-C]                       |   5.5   | 74.9   | -      | gradient  | 90+360
+\footnotetext[1]{the number of searching epochs is related to the proxy task, i.e., searching for convolutional cells on CIFAR-10.}
 
 ## Train for classification
 
