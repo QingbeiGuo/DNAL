@@ -88,100 +88,84 @@ model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%)
 
 Comparison among several state-of-the-art methods for VGG16 on ImageNet-1K
 
-model    | Params | FLOPs | Top-1 (%) | Top-5 (%)
----------|--------|-------|-----------|-----------
-[Baseline](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)                    | 25.55M | 4.09G   | 76.13   | 92.862
-[ResNet-G (Conv-60/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)    | 11.88M | 1.91G   | 75.20   | 92.55
-[ResNet-G (Conv-70/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)    |  9.83M | 1.55G   | 74.43   | 92.30
-[ResNet-G (Conv-80/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)    |  7.76M | 1.20G   | 73.22   | 91.70
-[ResNet-LG (Conv-60/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)   | 11.87M | 1.91G   | 75.12   | 92.59
-[ResNet-LG (Conv-70/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)   |  9.83M | 1.56G   | 74.42   | 92.31
-[ResNet-LG (Conv-80/FC-60)](https://pan.baidu.com/s/10ofp_aLnX5RCisDsVzXT-Q)   |  7.76M | 1.20G   | 73.38   | 91.69
-
-    \specialrule{0.10em}{0pt}{0pt}
-    Baseline                            &  15.47(1.00$\times$)  & 138.37(1.00$\times$)  & 76.13  & 92.86  & 90    
-    \specialrule{0.08em}{0pt}{0pt}
-    GDP~\cite{LinJLWHZ18}               &    7.5(2.06$\times$)  &                    -  & 69.88  & 89.16  & 90+30+20    
-    GDP~\cite{LinJLWHZ18}               &    6.4(2.42$\times$)  &                    -  & 68.80  & 88.77  & 90+30+20    
-    ThiNet~\cite{LuoZZXWL18}            &   4.79(3.23$\times$)  & 131.44(1.05$\times$)  & 69.74  & 89.41  & 196+48     
-    \textbf{DNAL}($\lambda_a$=1e-4)     &   4.69(3.30$\times$)  &  77.05(1.80$\times$)  & 69.80  & 89.42  & 30+10+70
-    SSR-L2,1~\cite{LinJLDL19}           &    4.5(3.44$\times$)  &  126.7(1.09$\times$)  & 69.80  & 89.53  & -     
-    SSR-L2,0~\cite{LinJLDL19}           &    4.5(3.44$\times$)  &  126.2(1.10$\times$)  & 69.99  & 89.42  & -     
-    GDP~\cite{LinJLWHZ18}               &    3.8(4.07$\times$)  &                    -  & 67.51  & 87.95  & 90+30+20     
-    SSS~\cite{HuangW18}                 &    3.8(4.07$\times$)  &  130.5(1.06$\times$)  & 68.53  & 88.20  & 100     
-    ThiNet~\cite{LuoZZXWL18}            &   3.46(4.47$\times$)  & 130.50(1.06$\times$)  & 69.11  & 88.86  & 196+48     
-    \specialrule{0.10em}{0pt}{0pt}
+model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
+---------|--------|-------|-----------|-----------|-----------
+[Baseline]                      |  15.47(1.00$\times$)  | 138.37(1.00$\times$)  | 76.13  | 92.86  | 90    
+[GDP]                           |    7.5(2.06$\times$)  |                    -  | 69.88  | 89.16  | 90+30+20    
+[GDP]                           |    6.4(2.42$\times$)  |                    -  | 68.80  | 88.77  | 90+30+20    
+[ThiNet]                        |   4.79(3.23$\times$)  | 131.44(1.05$\times$)  | 69.74  | 89.41  | 196+48     
+[DNAL($\lambda_a$=1e-4)]        |   4.69(3.30$\times$)  |  77.05(1.80$\times$)  | 69.80  | 89.42  | 30+10+70
+[SSR-L2,1]                      |    4.5(3.44$\times$)  |  126.7(1.09$\times$)  | 69.80  | 89.53  | -     
+[SSR-L2,0]                      |    4.5(3.44$\times$)  |  126.2(1.10$\times$)  | 69.99  | 89.42  | -     
+[GDP]                           |    3.8(4.07$\times$)  |                    -  | 67.51  | 87.95  | 90+30+20     
+[SSS]                           |    3.8(4.07$\times$)  |  130.5(1.06$\times$)  | 68.53  | 88.20  | 100     
+[ThiNet]                        |   3.46(4.47$\times$)  | 130.50(1.06$\times$)  | 69.11  | 88.86  | 196+48     
 
 2) ResNet50 on ImageNet-1K:
 
 Comparison among several state-of-the-art methods for ResNet50 on ImageNet-1K
 
-    \specialrule{0.10em}{0pt}{0pt}
-    Baseline                           &  4.09(1.00$\times$)  & 25.55(1.00$\times$)  & 75.19  & 92.56  & 90    \\
-    \specialrule{0.08em}{0.5pt}{0pt}
-    \textbf{DNAL}($\lambda_a$=5e-5)    &  2.07(1.98$\times$)  & 15.34(1.67$\times$)  & 74.07  & 92.02  & 30+10+70
-    SSR-L2,1~\cite{LinJLDL19}          &   1.9(2.15$\times$)  &  15.9(1.61$\times$)  & 72.13  & 90.57  & -  
-    SSR-L2,0~\cite{LinJLDL19}          &   1.9(2.15$\times$)  &  15.5(1.65$\times$)  & 72.29  & 90.73  & -  
-    GDP~\cite{LinJLWHZ18}              &  1.88(2.18$\times$)  &                   -  & 71.89  & 90.71  & 90+30+20   
-    GAL-0.5-joint~\cite{LinJYZCYHD19}  &  1.84(2.22$\times$)  & 19.31(1.32$\times$)  & 71.80  & 90.82  & 90+60     
-    ABCPruner~\cite{LinJZZWT20}        &  1.79(2.28$\times$)  & 11.24(2.27$\times$)  & 73.52  & 91.51  & 12+90
-    \textbf{DNAL}($\lambda_a$=6e-5)    &  1.75(2.34$\times$)  & 12.75(2.00$\times$)  & 73.65  & 91.74  & 30+10+70
-    ThiNet-50~\cite{LuoZZXWL18}        &  1.71(2.39$\times$)  & 12.38(2.06$\times$)  & 72.03  & 90.99  & 196+48
-    SSR-L2,1~\cite{LinJLDL19}          &   1.7(2.41$\times$)  &  12.2(2.09$\times$)  & 71.15  & 90.29  & -     
-    SSR-L2,0~\cite{LinJLDL19}          &   1.7(2.41$\times$)  &  12.0(2.13$\times$)  & 71.47  & 90.19  & -     
-    GAL-1~\cite{LinJYZCYHD19}          &  1.58(2.59$\times$)  & 14.67(1.74$\times$)  & 69.88  & 89.75  & 90+60
-    GDP~\cite{LinJLWHZ18}              &  1.57(2.61$\times$)  &                   -  & 70.93  & 90.14  & 90+30+20
-    HRank~\cite{LinJWZZTL20}           &  1.55(2.64$\times$)  & 13.77(1.86$\times$)  & 71.98  & 91.01  & -     
-    \textbf{DNAL}($\lambda_a$=7e-5)    &  1.44(2.84$\times$)  & 10.94(2.34$\times$)  & 72.86  & 91.34  & 30+10+70
-    ABCPruner~\cite{LinJZZWT20}        &  1.30(3.15$\times$)  &                   -  & 72.58  & -      & 12+90
-    GAL-1-joint~\cite{LinJYZCYHD19}    &  1.11(3.68$\times$)  & 10.21(2.50$\times$)  & 69.31  & 89.12  & 90+60
-    ThiNet-30~\cite{LuoZZXWL18}        &  1.10(3.72$\times$)  &  8.66(2.95$\times$)  & 68.17  & 88.86  & 196+48
-    HRank~\cite{LinJWZZTL20}           &  0.98(4.17$\times$)  &  8.27(3.09$\times$)  & 69.10  & 89.58  & -    
-    ABCPruner~\cite{LinJZZWT20}        &  0.94(4.35$\times$)  &                   -  & 70.29  & -      & 12+90
-    \textbf{DNAL}($\lambda_a$=1e-4)    &  0.88(4.65$\times$)  &  7.18(3.56$\times$)  & 70.17  & 89.78  & 30+10+70
-    \specialrule{0.10em}{0pt}{0pt}
+model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
+---------|--------|-------|-----------|-----------|-----------
+[Baseline]                      |  4.09(1.00$\times$)  | 25.55(1.00$\times$)  | 75.19  | 92.56  | 90    \\
+[DNAL($\lambda_a$=5e-5)]        |  2.07(1.98$\times$)  | 15.34(1.67$\times$)  | 74.07  | 92.02  | 30+10+70
+[SSR-L2,1]                      |   1.9(2.15$\times$)  |  15.9(1.61$\times$)  | 72.13  | 90.57  | -  
+[SSR-L2,0]                      |   1.9(2.15$\times$)  |  15.5(1.65$\times$)  | 72.29  | 90.73  | -  
+[GDP]                           |  1.88(2.18$\times$)  |                   -  | 71.89  | 90.71  | 90+30+20   
+[GAL-0.5-joint]                 |  1.84(2.22$\times$)  | 19.31(1.32$\times$)  | 71.80  | 90.82  | 90+60     
+[ABCPruner]                     |  1.79(2.28$\times$)  | 11.24(2.27$\times$)  | 73.52  | 91.51  | 12+90
+[DNAL($\lambda_a$=6e-5)]        |  1.75(2.34$\times$)  | 12.75(2.00$\times$)  | 73.65  | 91.74  | 30+10+70
+[ThiNet-50]                     |  1.71(2.39$\times$)  | 12.38(2.06$\times$)  | 72.03  | 90.99  | 196+48
+[SSR-L2,1]                      |   1.7(2.41$\times$)  |  12.2(2.09$\times$)  | 71.15  | 90.29  | -     
+[SSR-L2,0]                      |   1.7(2.41$\times$)  |  12.0(2.13$\times$)  | 71.47  | 90.19  | -     
+[GAL-1]                         |  1.58(2.59$\times$)  | 14.67(1.74$\times$)  | 69.88  | 89.75  | 90+60
+[GDP]                           |  1.57(2.61$\times$)  |                   -  | 70.93  | 90.14  | 90+30+20
+[HRank]                         |  1.55(2.64$\times$)  | 13.77(1.86$\times$)  | 71.98  | 91.01  | -     
+[DNAL($\lambda_a$=7e-5)]        |  1.44(2.84$\times$)  | 10.94(2.34$\times$)  | 72.86  | 91.34  | 30+10+70
+[ABCPruner]                     |  1.30(3.15$\times$)  |                   -  | 72.58  | -      | 12+90
+[GAL-1-joint]                   |  1.11(3.68$\times$)  | 10.21(2.50$\times$)  | 69.31  | 89.12  | 90+60
+[ThiNet-30]                     |  1.10(3.72$\times$)  |  8.66(2.95$\times$)  | 68.17  | 88.86  | 196+48
+[HRank]                         |  0.98(4.17$\times$)  |  8.27(3.09$\times$)  | 69.10  | 89.58  | -    
+[ABCPruner]                     |  0.94(4.35$\times$)  |                   -  | 70.29  | -      | 12+90
+[DNAL($\lambda_a$=1e-4)]        |  0.88(4.65$\times$)  |  7.18(3.56$\times$)  | 70.17  | 89.78  | 30+10+70
 
 3) MobileNetV2 on ImageNet-1K:
 
 Comparison among several state-of-the-art methods for MobileNetV2 on ImageNet-1K
 
-    Baseline                           &  300.79(1.00$\times$)  & 3.50(1.00$\times$)  & 71.52  & 90.15  & 120
-    \specialrule{0.08em}{0pt}{0pt}
-    \textbf{DNAL}($\lambda_a$=6e-5)    &  217.24(1.38$\times$)  &  2.87(1.22$\times$) & 71.02  & 89.96  & 80+10+90
-    AMC~\cite{HeLLWLH18}               &  211(1.43$\times$)     &  -                  & 70.8   & -      & -     
-    \textbf{DNAL}($\lambda_a$=7e-5)    &  207.25(1.45$\times$)  &  2.78(1.26$\times$) & 70.91  & 89.79  & 80+10+90
-    \specialrule{0.10em}{0pt}{0pt}
+model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
+---------|--------|-------|-----------|-----------|-----------
+[Baseline]                      |  300.79(1.00$\times$)  | 3.50(1.00$\times$)  | 71.52  | 90.15  | 120
+[DNAL($\lambda_a$=6e-5)]        |  217.24(1.38$\times$)  |  2.87(1.22$\times$) | 71.02  | 89.96  | 80+10+90
+[AMC]                           |  211(1.43$\times$)     |  -                  | 70.8   | -      | -     
+[DNAL($\lambda_a$=7e-5)]        |  207.25(1.45$\times$)  |  2.78(1.26$\times$) | 70.91  | 89.79  | 80+10+90
 
 4) ProxylessNAS on ImageNet-1K:
 
 Comparison among several state-of-the-art methods for ProxylessNAS on ImageNet-1K
 
-    \specialrule{0.10em}{0pt}{0pt}
-    Baseline                            &  16.0   & 75.7   & 92.5   & -         & 150
-    \specialrule{0.08em}{0pt}{0pt}
-    \textbf{DNAL}($\lambda_a$=4e-5)     &   6.4   & -      & -      & gradient  & 100+10+110
-    \textbf{DNAL}($\lambda_a$=5e-5)     &   4.4   & -      & -      & gradient  & 100+10+110
-    \textbf{DNAL}($\lambda_a$=6e-5)     &   3.6   & 75.0   & 92.3   & gradient  & 100+10+110
-    \specialrule{0.08em}{0pt}{0.5pt}
-    \specialrule{0.08em}{0.5pt}{0pt}
-    EA+BPE-1~\cite{ZhengJWYLTT20}       &   5.0   & 74.56  & -      & EA        & -
-    CARS-A~\cite{YangWCSXXT19}          &   3.7   & 72.8   & 90.8   & EA        & -
-    CARS-E~\cite{YangWCSXXT19}          &   4.4   & 73.7   & 90.8   & EA        & -
-    \specialrule{0.08em}{0pt}{0pt}
-    RL+BPE-1~\cite{ZhengJWYLTT20}       &   5.5   & 74.18  & -      & RL        & -
-    NASNet-A~\cite{ZophVSL17}           &   5.3   & 74.0   & 91.6   & RL        & -
-    NASNet-B~\cite{ZophVSL17}           &   5.3   & 72.8   & 91.3   & RL        & -
-    NASNet-C~\cite{ZophVSL17}           &   4.9   & 72.5   & 91.0   & RL        & -
-    MnasNet-92~\cite{TanCPVL18}         &   4.4   & 74.8   & -      & RL        & -
-    MnasNet~\cite{TanCPVL18}            &   4.2   & 74.0   & -      & RL        & -
-    MnasNet-65~\cite{TanCPVL18}         &   3.6   & 73.0   & -      & RL        & -
-    \specialrule{0.08em}{0pt}{0pt}
-    DARTS~\cite{LiuSY18}                &   4.7   & 73.3   & 91.3   & gradient  & 600\footnotemark[1]+250 
-    ProxylessNAS~\cite{CaiZH18}         &   7.1   & 75.1   & 92.5   & gradient  & 200+150
-    FBNet-A~\cite{WuDZWSWTVJ19}         &   4.3   & 73.0   & -      & gradient  & 90+360
-    FBNet-B~\cite{WuDZWSWTVJ19}         &   4.5   & 74.1   & -      & gradient  & 90+360
-    FBNet-C~\cite{WuDZWSWTVJ19}         &   5.5   & 74.9   & -      & gradient  & 90+360
-    \specialrule{0.10em}{0pt}{0pt}
+model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
+---------|--------|-------|-----------|-----------|-----------
+[Baseline]                      |  16.0   | 75.7   | 92.5   | -         | 150
+[DNAL($\lambda_a$=6e-5)]        |   3.6   | 75.0   | 92.3   | gradient  | 100+10+110
+---------|--------|-------|-----------|-----------|-----------
+[EA+BPE-1]                      |   5.0   | 74.56  | -      | EA        | -
+[CARS-I]                        |   5.1   | 75.2   | 92.5   | EA        | -
+[CARS-A]                        |   3.7   | 72.8   | 90.8   | EA        | -
+---------|--------|-------|-----------|-----------|-----------
+[RL+BPE-1]                      |   5.5   | 74.18  | -      | RL        | -
+[NASNet-A]                      |   5.3   | 74.0   | 91.6   | RL        | -
+[NASNet-B]                      |   5.3   | 72.8   | 91.3   | RL        | -
+[NASNet-C]                      |   4.9   | 72.5   | 91.0   | RL        | -
+[MnasNet-92]                    |   4.4   | 74.8   | -      | RL        | -
+[MnasNet]                       |   4.2   | 74.0   | -      | RL        | -
+[MnasNet-65]                    |   3.6   | 73.0   | -      | RL        | -
+---------|--------|-------|-----------|-----------|-----------
+[DARTS]                         |   4.7   | 73.3   | 91.3   | gradient  | 600\footnotemark[1]+250 
+[ProxylessNAS]                  |   7.1   | 75.1   | 92.5   | gradient  | 200+150
+[FBNet-A]                       |   4.3   | 73.0   | -      | gradient  | 90+360
+[FBNet-B]                       |   4.5   | 74.1   | -      | gradient  | 90+360
+[FBNet-C]                       |   5.5   | 74.9   | -      | gradient  | 90+360
 
 ## Train for classification
 
