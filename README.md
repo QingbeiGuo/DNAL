@@ -144,7 +144,7 @@ model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
 
 Comparison among several state-of-the-art methods for ProxylessNAS on ImageNet-1K
 
-model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
+model    | Params(M) | Top-1 (%) | Top-5 (%) | Search method | Search Cost (Epochs)
 ---------|--------|-------|-----------|-----------|-----------
 [Baseline]                      |  16.0   | 75.7   | 92.5   | -         | 150
 [DNAL($\lambda_a$=6e-5)]        |   3.6   | 75.0   | 92.3   | gradient  | 100+10+110
