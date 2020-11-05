@@ -153,7 +153,7 @@ Comparison among several state-of-the-art methods for ProxylessNAS on ImageNet-1
     \specialrule{0.08em}{0pt}{0pt}
     \textbf{DNAL}($\lambda_a$=4e-5)     &   6.4   & -      & -      & gradient  & 100+10+110
     \textbf{DNAL}($\lambda_a$=5e-5)     &   4.4   & -      & -      & gradient  & 100+10+110
-    \textbf{DNAL}($\lambda_a$=6e-5)     &   3.6   & 73.9   & 92.3   & gradient  & 100+10+110
+    \textbf{DNAL}($\lambda_a$=6e-5)     &   3.6   & 75.0   & 92.3   & gradient  & 100+10+110
     \specialrule{0.08em}{0pt}{0.5pt}
     \specialrule{0.08em}{0.5pt}{0pt}
     EA+BPE-1~\cite{ZhengJWYLTT20}       &   5.0   & 74.56  & -      & EA        & -
