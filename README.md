@@ -94,12 +94,14 @@ model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
 [GDP]                           |    7.5(2.06$\times$)  |                    -  | 69.88  | 89.16  | 90+30+20    
 [GDP]                           |    6.4(2.42$\times$)  |                    -  | 68.80  | 88.77  | 90+30+20    
 [ThiNet]                        |   4.79(3.23$\times$)  | 131.44(1.05$\times$)  | 69.74  | 89.41  | 196+48     
-[DNAL($\lambda_a$=1e-4)]        |   4.69(3.30$\times$)  |  77.05(1.80$\times$)  | 69.80  | 89.42  | 30+10+70
+[DNAL($\lambda_a$=1e-4)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |   4.69(3.30$\times$)  |  77.05(1.80$\times$)  | 69.80  | 89.42  | 30+10+70
 [SSR-L2,1]                      |    4.5(3.44$\times$)  |  126.7(1.09$\times$)  | 69.80  | 89.53  | -     
 [SSR-L2,0]                      |    4.5(3.44$\times$)  |  126.2(1.10$\times$)  | 69.99  | 89.42  | -     
 [GDP]                           |    3.8(4.07$\times$)  |                    -  | 67.51  | 87.95  | 90+30+20     
 [SSS]                           |    3.8(4.07$\times$)  |  130.5(1.06$\times$)  | 68.53  | 88.20  | 100     
 [ThiNet]                        |   3.46(4.47$\times$)  | 130.50(1.06$\times$)  | 69.11  | 88.86  | 196+48     
+
+baiduyun password: 1234
 
 2) ResNet50 on ImageNet-1K:
 
@@ -108,26 +110,28 @@ Comparison among several state-of-the-art methods for ResNet50 on ImageNet-1K
 model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
 ---------|--------|-------|-----------|-----------|-----------
 [Baseline]                      |  4.09(1.00$\times$)  | 25.55(1.00$\times$)  | 75.19  | 92.56  | 90    \\
-[DNAL($\lambda_a$=5e-5)]        |  2.07(1.98$\times$)  | 15.34(1.67$\times$)  | 74.07  | 92.02  | 30+10+70
+[DNAL($\lambda_a$=5e-5)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |  2.07(1.98$\times$)  | 15.34(1.67$\times$)  | 74.07  | 92.02  | 30+10+70
 [SSR-L2,1]                      |   1.9(2.15$\times$)  |  15.9(1.61$\times$)  | 72.13  | 90.57  | -  
 [SSR-L2,0]                      |   1.9(2.15$\times$)  |  15.5(1.65$\times$)  | 72.29  | 90.73  | -  
 [GDP]                           |  1.88(2.18$\times$)  |                   -  | 71.89  | 90.71  | 90+30+20   
 [GAL-0.5-joint]                 |  1.84(2.22$\times$)  | 19.31(1.32$\times$)  | 71.80  | 90.82  | 90+60     
 [ABCPruner]                     |  1.79(2.28$\times$)  | 11.24(2.27$\times$)  | 73.52  | 91.51  | 12+90
-[DNAL($\lambda_a$=6e-5)]        |  1.75(2.34$\times$)  | 12.75(2.00$\times$)  | 73.65  | 91.74  | 30+10+70
+[DNAL($\lambda_a$=6e-5)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |  1.75(2.34$\times$)  | 12.75(2.00$\times$)  | 73.65  | 91.74  | 30+10+70
 [ThiNet-50]                     |  1.71(2.39$\times$)  | 12.38(2.06$\times$)  | 72.03  | 90.99  | 196+48
 [SSR-L2,1]                      |   1.7(2.41$\times$)  |  12.2(2.09$\times$)  | 71.15  | 90.29  | -     
 [SSR-L2,0]                      |   1.7(2.41$\times$)  |  12.0(2.13$\times$)  | 71.47  | 90.19  | -     
 [GAL-1]                         |  1.58(2.59$\times$)  | 14.67(1.74$\times$)  | 69.88  | 89.75  | 90+60
 [GDP]                           |  1.57(2.61$\times$)  |                   -  | 70.93  | 90.14  | 90+30+20
 [HRank]                         |  1.55(2.64$\times$)  | 13.77(1.86$\times$)  | 71.98  | 91.01  | -     
-[DNAL($\lambda_a$=7e-5)]        |  1.44(2.84$\times$)  | 10.94(2.34$\times$)  | 72.86  | 91.34  | 30+10+70
+[DNAL($\lambda_a$=7e-5)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |  1.44(2.84$\times$)  | 10.94(2.34$\times$)  | 72.86  | 91.34  | 30+10+70
 [ABCPruner]                     |  1.30(3.15$\times$)  |                   -  | 72.58  | -      | 12+90
 [GAL-1-joint]                   |  1.11(3.68$\times$)  | 10.21(2.50$\times$)  | 69.31  | 89.12  | 90+60
 [ThiNet-30]                     |  1.10(3.72$\times$)  |  8.66(2.95$\times$)  | 68.17  | 88.86  | 196+48
 [HRank]                         |  0.98(4.17$\times$)  |  8.27(3.09$\times$)  | 69.10  | 89.58  | -    
 [ABCPruner]                     |  0.94(4.35$\times$)  |                   -  | 70.29  | -      | 12+90
-[DNAL($\lambda_a$=1e-4)]        |  0.88(4.65$\times$)  |  7.18(3.56$\times$)  | 70.17  | 89.78  | 30+10+70
+[DNAL($\lambda_a$=1e-4)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |  0.88(4.65$\times$)  |  7.18(3.56$\times$)  | 70.17  | 89.78  | 30+10+70
+
+baiduyun password: 1234
 
 3) MobileNetV2 on ImageNet-1K:
 
@@ -136,9 +140,11 @@ Comparison among several state-of-the-art methods for MobileNetV2 on ImageNet-1K
 model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%) | Search Cost (Epochs)
 ---------|--------|-------|-----------|-----------|-----------
 [Baseline]                      |  300.79(1.00$\times$)  | 3.50(1.00$\times$)  | 71.52  | 90.15  | 120
-[DNAL($\lambda_a$=6e-5)]        |  217.24(1.38$\times$)  |  2.87(1.22$\times$) | 71.02  | 89.96  | 80+10+90
+[DNAL($\lambda_a$=6e-5)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |  217.24(1.38$\times$)  |  2.87(1.22$\times$) | 71.02  | 89.96  | 80+10+90
 [AMC]                           |  211(1.43$\times$)     |  -                  | 70.8   | -      | -     
-[DNAL($\lambda_a$=7e-5)]        |  207.25(1.45$\times$)  |  2.78(1.26$\times$) | 70.91  | 89.79  | 80+10+90
+[DNAL($\lambda_a$=7e-5)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |  207.25(1.45$\times$)  |  2.78(1.26$\times$) | 70.91  | 89.79  | 80+10+90
+
+baiduyun password: 1234
 
 4) ProxylessNAS on ImageNet-1K:
 
@@ -147,7 +153,7 @@ Comparison among several state-of-the-art methods for ProxylessNAS on ImageNet-1
 model    | Params(M) | Top-1 (%) | Top-5 (%) | Search method | Search Cost (Epochs)
 ---------|--------|-------|-----------|-----------|-----------
 [Baseline]                      |  16.0   | 75.7   | 92.5   | -         | 150
-[DNAL($\lambda_a$=6e-5)]        |   3.6   | 75.0   | 92.5   | gradient  | 100+10+110
+[DNAL($\lambda_a$=6e-5)](https://pan.baidu.com/s/1C9he9EWnx8WysiZnF2Y5PQ)        |   3.6   | 75.0   | 92.5   | gradient  | 100+10+110
 ---------|--------|-------|-----------|-----------|-----------
 [EA+BPE-1]                      |   5.0   | 74.56  | -      | EA        | -
 [CARS-I]                        |   5.1   | 75.2   | 92.5   | EA        | -
@@ -168,6 +174,8 @@ model    | Params(M) | Top-1 (%) | Top-5 (%) | Search method | Search Cost (Epoc
 [FBNet-C]                       |   5.5   | 74.9   | -      | gradient  | 90+360
 
 \footnotetext[1]{the number of searching epochs is related to the proxy task, i.e., searching for convolutional cells on CIFAR-10.}
+
+baiduyun password: 1234
 
 ## Train for classification
 
