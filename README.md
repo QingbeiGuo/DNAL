@@ -18,7 +18,7 @@ This project is a pytorch implementation, aiming to compressing and accelerating
 
 We benchmark our code thoroughly on CIFAR-10 and imagenet-1K for classification, using conventional CNNs (e.g., VGG16 and ResNet50), lightweight CNNs (e.g., MobileNetV2) and stochastic supernets (e.g., ProxylessNAS). Below are the results:
 
-1. CIFAR-10
+I. CIFAR-10
 
 1) VGG16 on CIFAR-10:
 
@@ -82,7 +82,7 @@ model    | FLOPs(M) | Params(M) | Top-1 (%) | Top-5 (%)
 [DNAL($\lambda_a$=4e-4)]        |  5.40(16.88$\times$) |0.096(23.96$\times$)  | 88.83           | 99.76  
 [DNAL}($\lambda_a$=5e-4)]       |  4.50(20.26$\times$) |0.081(28.40$\times$)  | 87.85           | 99.62  
 
-2. ImageNet-1K
+II. ImageNet-1K
 
 1) VGG16 on ImageNet-1K:
 
