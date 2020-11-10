@@ -8,7 +8,7 @@ To address this computational complexity issue, we introduce a novel \emph{archi
 Specifically, for stochastic supernets as well as conventional CNNs, we build a new channel-wise module layer with the architecture components controlled by a scaled sigmoid function. We train these neural network models from scratch. The network optimization is decoupled into the weight optimization and the architecture optimization, which avoids the interaction between the two types of parameters and alleviates the vanishing gradient problem. We address the non-convex optimization problem of neural architecture by the continuous scaled sigmoid method with convergence guarantees.
 Extensive experiments demonstrate our DNAL method delivers superior performance in terms of neural architecture search cost, and adapts to conventional CNNs (e.g., VGG16 and ResNet50), lightweight CNNs (e.g., MobileNetV2) and stochastic supernets (e.g., ProxylessNAS). The optimal networks learned by DNAL surpass those produced by the state-of-the-art methods on the benchmark CIFAR-10 and ImageNet-1K dataset in accuracy, model size and computational complexity. Our source code is available at \url{https://github.com/QingbeiGuo/DNAL.git}.
 
-This project is a pytorch implementation, aiming to compressing and accelerating deep convolutional neural networks. 
+This project is a pytorch implementation, aiming to NAS for efficient neural networks. 
 
 ### What we are doing and going to do
 
