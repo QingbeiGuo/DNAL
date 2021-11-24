@@ -1,4 +1,4 @@
-# Differentiable Neural Architecture Learning for Efficient Neural Network Design
+# Differentiable Neural Architecture Learning for Efficient Neural Network Design, Pattern Recognition, 2021
 
 ## Introduction
 
@@ -186,3 +186,13 @@ baiduyun password: 1234
 This project is contributed by [Qingbei Guo](https://github.com/QingbeiGuo).
 
 ## Citation
+
+@article{GuoWKF21,  
+  title={Differentiable Neural Architecture Learning for Efficient Neural Network Design},  
+  author={Guo, Qingbei and Wu, Xiao-Jun and Kittlerz, Josef and Feng, Zhiquan},  
+  journal={Pattern Recognition},   
+  year={2021},    
+  publisher={Elsevier},   
+  Accepted,   
+}
+
