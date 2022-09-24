@@ -187,12 +187,14 @@ This project is contributed by [Qingbei Guo](https://github.com/QingbeiGuo).
 
 ## Citation
 
-@article{GuoWKF21,  
-  title={Differentiable Neural Architecture Learning for Efficient Neural Network Design},  
-  author={Guo, Qingbei and Wu, Xiao-Jun and Kittlerz, Josef and Feng, Zhiquan},  
-  journal={Pattern Recognition},   
-  year={2021},    
-  publisher={Elsevier},   
-  Accepted,   
+@article{GuoWKF22,
+  title={Differentiable Neural Architecture Learning for Efficient Neural Networks},
+  author={Guo, Qingbei and Wu, Xiao-Jun and Kittler, Josef and Feng, Zhiquan},
+  journal={Pattern Recognition},
+  volume={126},
+  pages={108448},
+  year={2022},
+  publisher={Elsevier},
+  doi={10.1016/j.patcog.2021.108448}
 }
 
