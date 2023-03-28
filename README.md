@@ -1,4 +1,4 @@
-# Differentiable Neural Architecture Learning for Efficient Neural Network Design, Pattern Recognition, 2021
+# Differentiable Neural Architecture Learning for Efficient Neural Network Design, Pattern Recognition, 2022
 
 ## Introduction
 
